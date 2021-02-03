@@ -1,24 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import AppRouter from './routers/AppRouter'
 import 'normalize.css/normalize.css'
 import './styles/styles.scss';
 import reportWebVitals from './reportWebVitals';
 
-
-let render = () =>{
+let render = () => {
   ReactDOM.render(
-    /*<React.StrictMode>
-      <App />
-    </React.StrictMode>*/
-    <App />,
+    <AppRouter />,
     document.getElementById('root')
   );
 }
 render();
-
-
-
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
